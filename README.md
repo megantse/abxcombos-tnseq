@@ -1,6 +1,14 @@
 Example shell scripts asssociated with analyzing the Tn-seq data
 
-Necessary packages and scripts (and their dependencies):
-- FASTX-toolkit (http://hannonlab.cshl.edu/fastx_toolkit/commandline.html - fastxclipper and fastq_quality_filter version 0.0.6) 
+Necessary packages and scripts (and their dependencies) for generating fitness scores from fastq data:
+- FASTX-toolkit (http://hannonlab.cshl.edu/fastx_toolkit/commandline.html - fastxclipper and fastq_quality_filter, version 0.0.6)
+- bowtie (https://bowtie-bio.sourceforge.net/index.shtml, version 1.3.1)
 - calc_fitness.py (https://github.com/jsa-aerial/aerobio/blob/master/Scripts/calc_fitness.py)
 - aggregate.py (https://github.com/vanOpijnenLab/MAGenTA/blob/master/tools/galaxy/Aggregate%20Fitnesses/aggregate.py)
+
+Necessary packages to aggregate fitness scores in Jupyter notebook:
+- pandas==1.0.1
+- glob2==0.7
+- scipy==1.6.2
+- statsmodels==0.11.0
+- numpy==1.21.6
